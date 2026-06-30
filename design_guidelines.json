@@ -1,0 +1,80 @@
+{
+  "theme": "dark",
+  "archetype": "Hybrid of 4 (Swiss Brutalist) and 5 (Luxury)",
+  "design_philosophy": "A 'Dark-First' Premium tech portfolio that breaks the generic 'AI' mold. Utilizes a deep obsidian canvas with 'Acid Yellow' high-contrast accents. Merges brutalist grid layouts with luxury glassmorphism to present engineering as a fine art.",
+  "colors": {
+    "background": "#050505",
+    "surface": "#0F0F10",
+    "surface_glass": "rgba(15, 15, 16, 0.6)",
+    "border": "#1F1F22",
+    "border_highlight": "#333336",
+    "primary": "#CCFF00",
+    "primary_hover": "#AACC00",
+    "text_primary": "#F4F4F5",
+    "text_secondary": "#A1A1AA",
+    "text_inverse": "#050505",
+    "error": "#FF453A",
+    "success": "#32D74B"
+  },
+  "typography": {
+    "fonts_to_install": [
+      "@fontsource/unbounded",
+      "@fontsource/outfit",
+      "@fontsource/azeret-mono"
+    ],
+    "heading_font": "'Unbounded', sans-serif",
+    "body_font": "'Outfit', sans-serif",
+    "mono_font": "'Azeret Mono', monospace",
+    "scale": {
+      "h1": "text-5xl md:text-6xl lg:text-[5rem] tracking-tighter font-black leading-none",
+      "h2": "text-3xl md:text-4xl lg:text-5xl tracking-tight font-bold",
+      "h3": "text-2xl md:text-3xl font-bold",
+      "h4": "text-xl font-semibold",
+      "body": "text-base md:text-lg leading-relaxed font-light text-text_secondary",
+      "small": "text-sm tracking-wide text-text_secondary",
+      "overline": "text-xs uppercase tracking-[0.2em] font-mono text-primary"
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-24 md:py-32",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8",
+    "radius_system": {
+      "card": "rounded-2xl",
+      "button": "rounded-full",
+      "badge": "rounded-md"
+    }
+  },
+  "motion_and_interactions": {
+    "hover_state": "transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/50",
+    "glass_effect": "backdrop-blur-xl bg-surface_glass border border-white/5 shadow-[0_8px_32px_rgba(0,0,0,0.12)]",
+    "particle_background": "react-tsparticles with subtle gray/white nodes, avoiding generic blue constellations. Low density, slow movement. Or use a custom canvas animation.",
+    "page_load": "Framer Motion staggered fade-up (y: 20, opacity: 0 to 1) for all section children."
+  },
+  "media_assets": {
+    "profile_photo": "https://customer-assets.emergentagent.com/job_kanak-tech-hub/artifacts/gqu9vcj2_K2.jpg",
+    "resume_pdf": "https://customer-assets.emergentagent.com/job_kanak-tech-hub/artifacts/y8irktl6_Kanak_cv2.pdf",
+    "abstract_bg": "https://images.pexels.com/photos/13027585/pexels-photo-13027585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "components": {
+    "button_primary": "bg-primary text-text_inverse font-bold px-8 py-3 rounded-full hover:bg-primary_hover transition-colors shadow-[0_0_15px_rgba(204,255,0,0.3)]",
+    "button_secondary": "bg-transparent border border-border text-text_primary px-8 py-3 rounded-full hover:border-primary hover:text-primary transition-all",
+    "card": "bg-surface rounded-2xl border border-border p-6 md:p-8 hover:border-border_highlight transition-all relative overflow-hidden group",
+    "nav_glass": "fixed top-0 w-full z-50 backdrop-blur-xl bg-[#050505]/70 border-b border-white/10",
+    "skill_progress": "h-1 bg-border rounded-full overflow-hidden; inner bar bg-primary",
+    "timeline_node": "w-3 h-3 rounded-full bg-primary ring-4 ring-primary/20",
+    "timeline_line": "absolute left-[5px] top-3 bottom-0 w-px bg-border"
+  },
+  "instructions_to_main_agent": [
+    "Extend the tailwind.config.js to include the custom colors and fonts defined in these guidelines.",
+    "Use framer-motion for all scroll and reveal animations.",
+    "Implement the 'Tracing Beam' effect for project cards using Framer Motion.",
+    "Ensure 'react-tsparticles' is used for the hero background, configured to slow-moving, subtle grey/acid-yellow dots.",
+    "Use 'react-type-animation' or framer-motion for the typing effect in the hero section.",
+    "Implement the Contact form using Shadcn UI Form components, customized to match the dark glassmorphism theme.",
+    "Use 'lucide-react' or '@phosphor-icons/react' for icons.",
+    "Ensure the layout strictly follows the asymmetrical Bento Grid pattern for the skills and projects section.",
+    "Do NOT use pure black (#000000) or pure white (#FFFFFF). Stick to the color palette provided.",
+    "Add 'data-testid' to all interactive elements (buttons, links, form inputs) as requested."
+  ]
+}
