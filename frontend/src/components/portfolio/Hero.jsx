@@ -204,7 +204,7 @@ const Hero = () => {
               <Cpu className="inline h-3 w-3 mr-1.5 -mt-0.5" /> NEURAL · ONLINE
             </div>
             <div className="absolute -bottom-4 right-2 px-3 py-1.5 rounded-full glass font-mono text-[10px] uppercase tracking-[0.25em] text-neon-purple">
-              KS · CORE · v0xKS.2026
+              KS · CORE · ONLINE
             </div>
             <div className="absolute top-1/2 -right-2 px-2 py-1 rounded-md glass font-mono text-[10px] text-zinc-300">
               90% accuracy

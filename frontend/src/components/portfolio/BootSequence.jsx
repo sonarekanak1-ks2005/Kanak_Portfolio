@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const LINES = [
   { t: "[ SYS ] Initializing AI Portfolio...", d: 220 },
-  { t: "[ SYS ] Bootstrapping kernel · v0xKS.2026", d: 280 },
+  { t: "[ SYS ] Bootstrapping kernel", d: 280 },
   { t: "[ NET ] Establishing secure uplink · TLS 1.3", d: 320 },
   { t: "[ ML  ] Loading Machine Learning models · CNN / LSTM / RNN", d: 380 },
   { t: "[ ML  ] Spinning up neural sphere · 12,800 synapses online", d: 360 },
@@ -70,7 +70,7 @@ const BootSequence = ({ onDone }) => {
               <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e] shadow-[0_0_6px_#ffbd2e]" />
               <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f] shadow-[0_0_6px_#27c93f]" />
               <span className="ml-3 text-[11px] tracking-widest uppercase text-neon-blue/80">
-                ks-os · boot · v0xKS.2026
+                ks-os · boot
               </span>
             </div>
 

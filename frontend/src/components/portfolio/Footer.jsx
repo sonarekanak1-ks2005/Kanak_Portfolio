@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <div className="font-display font-semibold">{PROFILE.name}</div>
             <div className="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.25em]">
-              AI · ML · CLOUD · v0xKS.2026
+              AI · ML · CLOUD
             </div>
           </div>
         </div>
