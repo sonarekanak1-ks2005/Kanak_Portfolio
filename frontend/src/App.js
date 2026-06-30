@@ -13,7 +13,6 @@ import Leadership from "@/components/portfolio/Leadership";
 import Education from "@/components/portfolio/Education";
 import Contact from "@/components/portfolio/Contact";
 import Footer from "@/components/portfolio/Footer";
-import ScrollProgress from "@/components/portfolio/ScrollProgress";
 import BootSequence from "@/components/portfolio/BootSequence";
 import MouseGlow from "@/components/portfolio/MouseGlow";
 import { PROFILE } from "@/data/portfolio";
@@ -38,7 +37,6 @@ const Home = () => {
     <div className="relative min-h-screen bg-background text-foreground antialiased selection:bg-neon-blue selection:text-black">
       <BootSequence onDone={() => setBooted(true)} />
       <MouseGlow />
-      <ScrollProgress />
       <Navbar />
       <main data-testid="main-content" className={booted ? "" : "pointer-events-none"}>
         <Hero />
