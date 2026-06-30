@@ -178,9 +178,6 @@ const Hero = () => {
             >
               <Linkedin className="h-4 w-4" />
             </a>
-            <span className="text-[11px] font-mono uppercase tracking-widest text-zinc-500 ml-1">
-              · Open to internships & collabs
-            </span>
           </motion.div>
         </div>
 

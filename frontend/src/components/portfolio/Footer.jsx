@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
 
         <div className="text-xs text-zinc-500 font-mono uppercase tracking-widest">
-          © {new Date().getFullYear()} · crafted with React · Three.js · Framer
+          © {new Date().getFullYear()} · Kanak Sonare
         </div>
 
         <div className="flex items-center gap-2">

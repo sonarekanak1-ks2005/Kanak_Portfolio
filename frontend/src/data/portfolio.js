@@ -6,7 +6,7 @@ export const PROFILE = {
   role: "AI/ML Engineer · Software Developer",
   university: "VIT Bhopal University",
   degree: "B.Tech CSE (AI & ML)",
-  year: "3rd Year",
+  year: "4th Year",
   tagline:
     "Building intelligent systems through Artificial Intelligence, Machine Learning, and Software Engineering.",
   bio: "I am a Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning at VIT Bhopal University. I am passionate about developing intelligent systems, deep learning applications, and scalable software solutions. My interests span machine learning, cloud computing, web development, and data-driven technologies.",
@@ -18,7 +18,7 @@ export const PROFILE = {
   ],
   phone: "+91 8767043498",
   email: "sonarekanak1@gmail.com",
-  location: "Bhopal, India",
+  location: "Nagpur, India",
   github: "https://github.com/sonarekanak1-ks2005",
   linkedin: "https://www.linkedin.com/in/kanak-sonare-01a45a1b1/",
   resumeUrl:
@@ -137,24 +137,6 @@ export const PROJECTS = [
     ],
     github: "https://github.com/sonarekanak1-ks2005",
     accent: "from-[#22d3ee]/25 to-transparent",
-    year: "2025",
-  },
-  {
-    id: "p3",
-    title: "Personal Portfolio Website",
-    summary:
-      "Responsive portfolio showcasing technical skills, projects and leadership.",
-    description:
-      "Built a responsive portfolio website showcasing technical skills, projects, and leadership experience.",
-    stack: ["React", "HTML", "CSS", "JavaScript"],
-    features: [
-      "Responsive UI",
-      "Reusable components",
-      "Modern design",
-      "Performance optimization",
-    ],
-    github: "https://github.com/sonarekanak1-ks2005",
-    accent: "from-fuchsia-400/25 to-transparent",
     year: "2025",
   },
 ];
