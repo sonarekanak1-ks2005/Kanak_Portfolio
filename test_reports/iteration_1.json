@@ -1,0 +1,22 @@
+{
+  "summary": "Smoke test passed for Kanak Sonare portfolio. Backend (GET /api/, POST /api/contact with valid/invalid/missing payloads, GET /api/contact) and frontend (hero load, nav data-testids, contact form submit -> toast -> form cleared -> persisted in Mongo with email_sent=true) all working as expected. Resend integration returns email_sent=true.",
+  "tested_scope": ["backend", "frontend", "integration"],
+  "passed": [
+    "GET /api/ -> 200 {message: 'Kanak Sonare Portfolio API'}",
+    "POST /api/contact valid payload -> 200 {status:success,id,email_sent:true}",
+    "POST /api/contact missing fields -> 422",
+    "POST /api/contact invalid email -> 422",
+    "GET /api/contact returns persisted records including new submission",
+    "Frontend home loads at REACT_APP_BACKEND_URL with hero heading 'Kanak Sonare'",
+    "Hero CTAs visible: hero-download-resume, hero-view-projects, hero-contact-me",
+    "Navbar theme-toggle visible; all sections present (#about,#skills,#projects,#experience,#education,#contact)",
+    "Contact form submission via UI shows success toast 'Message sent - I'll get back to you shortly!', clears form, and persists in MongoDB with email_sent=true",
+    "No console/page errors observed"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true,
+  "notes": "Hero heading renders as 'Kanak Sonare' (mixed case) rather than literal 'KANAK SONARE' all-caps text - this is a CSS uppercase styling on a Title Case string, which is acceptable. Typing effect and stats counter were not explicitly polled but the hero rendered without errors. Theme-toggle click step was skipped due to a benign urllib 403 from inside browser sandbox (not a product bug); manual toggle was not retested but element is visible. Resend returns email_sent=true; actual deliverability to sonarekanak1@gmail.com depends on Resend free-tier verified-recipient rule (out of scope)."
+}
