@@ -53,16 +53,33 @@ module.exports = {
                 input: 'hsl(var(--input))',
                 ring: 'hsl(var(--ring))',
                 brand: {
-                    DEFAULT: '#CCFF00',
-                    hover: '#AACC00',
-                    soft: 'rgba(204,255,0,0.12)',
+                    DEFAULT: '#00F5FF',
+                    hover: '#22d6e8',
+                    soft: 'rgba(0,245,255,0.10)',
+                },
+                neon: {
+                    blue: '#00F5FF',
+                    cyan: '#00FFFF',
+                    purple: '#8B5CF6',
+                    magenta: '#D946EF',
+                },
+                obsidian: {
+                    900: '#020207',
+                    800: '#050510',
+                    700: '#0A0A18',
+                    600: '#10101F',
+                    500: '#16162A',
                 },
             },
             backgroundImage: {
                 'grid-pattern':
-                    "linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)",
-                'grid-pattern-light':
-                    "linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px)",
+                    "linear-gradient(to right, rgba(0,245,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,245,255,0.06) 1px, transparent 1px)",
+                'grid-pattern-fine':
+                    "linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px)",
+                'radial-glow':
+                    "radial-gradient(circle at center, rgba(0,245,255,0.25) 0%, transparent 60%)",
+                'scanlines':
+                    "repeating-linear-gradient(180deg, rgba(0,245,255,0.04) 0 1px, transparent 1px 3px)",
             },
             keyframes: {
                 'accordion-down': { from: { height: '0' }, to: { height: 'var(--radix-accordion-content-height)' } },
@@ -73,18 +90,38 @@ module.exports = {
                     '0%,100%': { 'background-position': '0% 50%' },
                     '50%': { 'background-position': '100% 50%' },
                 },
-                marquee: {
-                    '0%': { transform: 'translateX(0)' },
-                    '100%': { transform: 'translateX(-50%)' },
+                'pulse-glow': {
+                    '0%,100%': { boxShadow: '0 0 0 0 rgba(0,245,255,0.5)' },
+                    '50%': { boxShadow: '0 0 30px 6px rgba(0,245,255,0.35)' },
+                },
+                scan: {
+                    '0%': { transform: 'translateY(-100%)' },
+                    '100%': { transform: 'translateY(100%)' },
+                },
+                'border-rotate': {
+                    '0%': { backgroundPosition: '0% 50%' },
+                    '100%': { backgroundPosition: '300% 50%' },
+                },
+                'fade-in': {
+                    '0%': { opacity: '0', transform: 'translateY(6px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
                 },
             },
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
                 blink: 'blink 1s steps(2) infinite',
-                float: 'float 4s ease-in-out infinite',
+                float: 'float 6s ease-in-out infinite',
                 'gradient-x': 'gradient-x 8s ease infinite',
-                marquee: 'marquee 40s linear infinite',
+                'pulse-glow': 'pulse-glow 2.4s ease-in-out infinite',
+                scan: 'scan 3s linear infinite',
+                'border-rotate': 'border-rotate 6s linear infinite',
+                'fade-in': 'fade-in 0.5s ease-out forwards',
+            },
+            boxShadow: {
+                'neon': '0 0 18px rgba(0,245,255,0.55), 0 0 60px rgba(0,245,255,0.25)',
+                'neon-soft': '0 0 12px rgba(0,245,255,0.30)',
+                'neon-purple': '0 0 18px rgba(139,92,246,0.55), 0 0 60px rgba(139,92,246,0.25)',
             },
         }
     },
